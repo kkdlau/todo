@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         ],
         child: MaterialApp(
             title: 'TODO',
+            debugShowCheckedModeBanner: false,
             theme: ThemeData(
               primarySwatch: Colors.blue,
               visualDensity: VisualDensity.adaptivePlatformDensity,
