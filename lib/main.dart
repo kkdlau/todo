@@ -4,6 +4,8 @@ import 'package:todo/hkust_canvas/HKUST_Canvas_API.dart';
 import 'package:todo/style/theme_notifier.dart';
 import 'package:todo/widgets/main_page.dart';
 
+final HKUSTCanvas canvas = HKUSTCanvas();
+
 void main() {
   runApp(MyApp());
 }
@@ -17,8 +19,6 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<ThemeNotifier>(
           create: (BuildContext context) => ThemeNotifier(AppTheme.LIGHT),
         ),
-        ChangeNotifierProvider<HKUSTCanvas>(
-            create: (BuildContext context) => HKUSTCanvas())
       ],
       child: MaterialApp(
           theme: ThemeData(

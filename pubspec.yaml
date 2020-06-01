@@ -32,6 +32,8 @@ dependencies:
   google_fonts:
   shared_preferences:
   flutter_webview_plugin:
+  webview_flutter: ^0.3.22+1
+  dio:
 
 dev_dependencies:
   flutter_test:
