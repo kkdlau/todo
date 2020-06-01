@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:todo/style/add_event_dialog_notifier.dart';
 
 class SimpleEventPage extends StatefulWidget {
   SimpleEventPage({Key key}) : super(key: key);
@@ -20,7 +18,6 @@ class _SimpleEventPageState extends State<SimpleEventPage>
     );
   }
 
-  @override
-  // TODO: implement wantKeepAlive
+  @mustCallSuper
   bool get wantKeepAlive => true;
 }
