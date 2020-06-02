@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:todo/widgets/event_dialog/add_event_dialog.dart';
 
 class PageLayout extends StatefulWidget {
   PageLayout({Key key}) : super(key: key);
@@ -42,9 +41,7 @@ class _PageLayoutState extends State<PageLayout> {
       body: Container(),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.black,
-          onPressed: () {
-            showDialog(context: context, child: AddEventDialog());
-          },
+          onPressed: () {},
           child: Icon(Icons.add)),
     );
   }

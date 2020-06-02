@@ -11,8 +11,6 @@ class _SimpleEventPageState extends State<SimpleEventPage>
     with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
-    // final AddEventDialogNotifier eventInfo =
-    //     Provider.of<AddEventDialogNotifier>(context);
     return Container(
       child: TextField(),
     );
