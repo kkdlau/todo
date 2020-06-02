@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo/hkust_canvas/HKUST_Canvas_API.dart';
 import 'package:todo/notifier/theme_notifier.dart';
-import 'package:todo/widgets/collection_page.dart';
-import 'package:todo/widgets/main_page.dart';
+import 'package:todo/widgets/pages/collection_page.dart';
 
 final HKUSTCanvas canvas = HKUSTCanvas();
 

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:todo/widgets/event_dialog/bottom_add_event_sheet.dart';
 
-class MainPage extends StatefulWidget {
-  MainPage({Key key}) : super(key: key);
+class TodoListManager extends StatefulWidget {
+  TodoListManager({Key key}) : super(key: key);
 
   @override
-  _MainPageState createState() => _MainPageState();
+  _TodoListManagerState createState() => _TodoListManagerState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _TodoListManagerState extends State<TodoListManager> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
