@@ -21,10 +21,14 @@ class HKUSTCanvas {
 
   Future<String> apiRequestHandler(String url) async {
     if (!signed) return "unauthenticated";
-    Response response = await Dio(BaseOptions(
-        responseType: ResponseType.plain,
-        headers: {'cookie': _cookie})).get(url);
-    return response.data.toString();
+    try {
+      Response response = await Dio(BaseOptions(
+          responseType: ResponseType.plain,
+          headers: {'cookie': _cookie})).get(url);
+      return response.data.toString();
+    } catch (e) {
+      return "unauthenticated";
+    }
   }
 
   Future<List> availableCourses() async {
